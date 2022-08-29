@@ -87,7 +87,7 @@ double B = 18.6055;         // Distance between the center of the 2 horizontal e
     oldpositionY1 = currentpositionY1;
 
     //Gets the current position of the Encoders in revolutions
-    currentpositionX1 = -1 * EncoderX1.rotation(rotationUnits::raw);
+    currentpositionX1 = EncoderX1.rotation(rotationUnits::raw);
     currentpositionX2 = EncoderX2.rotation(rotationUnits::raw);
     currentpositionY1= EncoderY1.rotation(rotationUnits::raw);
     
