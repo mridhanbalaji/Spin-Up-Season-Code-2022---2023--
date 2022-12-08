@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 # Drag coefficient, projectile radius (m), area (m2) and mass (kg).
 c = 0.47
-r = 0.05
+r = 0.0625
 A = np.pi * r**2
-m = 0.2
+m = 0.065
 # Air density (kg.m-3), acceleration due to gravity (m.s-2).
 rho_air = 1.28
 g = 9.81
@@ -15,7 +15,7 @@ k = 0.5 * c * rho_air * A
 
 # Initial speed and launch angle (from the horizontal).
 v0 = 50
-phi0 = np.radians(65)
+phi0 = np.radians(45)
 
 def deriv(t, u):
     x, xdot, z, zdot = u
